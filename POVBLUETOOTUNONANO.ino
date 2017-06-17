@@ -10,7 +10,7 @@
 //BE CAREFULLY!! NOT CONNECT APA102 REVERSED
 //GND ARDUINO AND GND APA102 MUST BE CONNECTED
 //POWER SUPPLY OF APA102 IS EXTERNAL FROM ARDUINO
-//BLUETOOTH: TX in RX (D0) AND RX in TX(D1) BAUD RATE 9800
+//BLUETOOTH: TX in RX (D0) AND RX in TX(D1) BAUD RATE 9600
 //A2 CONNECT TO RESET
 
 
@@ -91,7 +91,7 @@ void setup() {
   pinMode(A2, INPUT);
   digitalWrite(A2, LOW);
 
-  Serial.begin(9800);
+  Serial.begin(9600);
   EEPROMI2C();
 
   FastLED.addLeds<APA102>(leds, persistence.num_leds + persistence.offset1);
@@ -202,8 +202,8 @@ void  EEPROMI2C() {
 void  cargaSerial() {
   unsigned int vint = 0;
   int index = 0;
+  Serial.println("pasa");
   if (Serial.available()) {
-    noInterrupts();
     Serial.println("READING");
     detachInterrupt(digitalPinToInterrupt(2));
     input = "";
@@ -311,7 +311,7 @@ void  cargaSerial() {
         Serial.println("RECORDING");
         EEPROM_writeAnything(0, persistence);
         Serial.println("DESCONECTANDO");
-        delay(5);
+        delay(500);
         pinMode(A2, OUTPUT);
         analogWrite(A2, 255);
         delay(5000);
@@ -322,6 +322,5 @@ void  cargaSerial() {
       persistence.PolarRedu[index] = vint;
       index++;
     }
-    interrupts();
   }
 };
