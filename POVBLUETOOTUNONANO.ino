@@ -1,5 +1,7 @@
 //PERSISTENCE OF VISION PROJECT
 //AUTHOR: JESÚS VICENTE PINPANPLOT@GMAIL.COM 2017
+//Persistence of Vision Project by Jesús Vicente is licensed under a Creative Commons Reconocimiento 4.0 Internacional License.
+
 
 /////////////////////////
 //CONNECTIONS:
