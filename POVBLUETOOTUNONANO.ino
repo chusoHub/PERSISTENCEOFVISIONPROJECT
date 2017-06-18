@@ -202,7 +202,6 @@ void  EEPROMI2C() {
 void  cargaSerial() {
   unsigned int vint = 0;
   int index = 0;
-  Serial.println("pasa");
   if (Serial.available()) {
     Serial.println("READING");
     detachInterrupt(digitalPinToInterrupt(2));
