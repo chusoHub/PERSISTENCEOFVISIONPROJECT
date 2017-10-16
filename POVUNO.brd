@@ -744,12 +744,19 @@ design rules under a new name.</description>
 <signal name="XT1R">
 </signal>
 <signal name="S$1">
-<wire x1="-27.305" y1="1.397" x2="-10.795" y2="1.397" width="0.508" layer="1"/>
+<wire x1="-27.305" y1="1.397" x2="-11.049" y2="1.397" width="0.508" layer="1"/>
 <contactref element="E$10" pad="1"/>
+<wire x1="-11.049" y1="1.397" x2="-10.795" y2="1.397" width="0.508" layer="1"/>
 <wire x1="-10.795" y1="1.397" x2="-10.795" y2="-7.493" width="0.508" layer="1"/>
 <contactref element="E$4" pad="1"/>
 <wire x1="-10.795" y1="-7.493" x2="-6.985" y2="-7.493" width="0.508" layer="1"/>
 <wire x1="-6.985" y1="-7.493" x2="-6.985" y2="-13.843" width="0.508" layer="1"/>
+<wire x1="-3.937" y1="-19.939" x2="-3.683" y2="-19.939" width="0.508" layer="1"/>
+<wire x1="-3.683" y1="-19.939" x2="-3.683" y2="1.397" width="0.508" layer="1"/>
+<wire x1="-3.683" y1="1.524" x2="-3.683" y2="10.16" width="0.508" layer="1"/>
+<wire x1="-3.683" y1="10.16" x2="-2.032" y2="10.16" width="0.508" layer="1"/>
+<wire x1="-10.795" y1="1.397" x2="-3.683" y2="1.397" width="0.508" layer="1"/>
+<wire x1="-3.683" y1="1.397" x2="-3.683" y2="1.524" width="0.508" layer="1"/>
 </signal>
 <signal name="S$16">
 <contactref element="E$10" pad="4"/>
